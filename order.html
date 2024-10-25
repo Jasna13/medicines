@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Order Management</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="products.php">Product Management</a></li>
+                <li><a href="stock.php">Stock Management</a></li>
+                <li><a href="staff.php">Staff Management</a></li>
+                <li><a href="order.html">Order Management</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="orders" class="panel">
+        <h2>View Orders</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Order ID</th>
+                    <th>Medicine</th>
+                    <th>Available Stock</th>
+                    <th>Quantity Purchased</th>
+                    <th>Total Price</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="order-list">
+                <!-- Orders will be dynamically loaded here -->
+                <!-- Example Static Data -->
+                <tr>
+                    <td>john_doe</td>
+                    <td>1001</td>
+                    <td>Paracetamol</td>
+                    <td>50</td> <!-- Available Stock -->
+                    <td>2</td> <!-- Quantity Purchased -->
+                    <td>$10</td> <!-- Total Price -->
+                    <td>Delivered</td> <!-- Status -->
+                </tr>
+                <tr>
+                    <td>jane_smith</td>
+                    <td>1002</td>
+                    <td>Ibuprofen</td>
+                    <td>30</td> <!-- Available Stock -->
+                    <td>1</td> <!-- Quantity Purchased -->
+                    <td>$5</td> <!-- Total Price -->
+                    <td>Pending</td> <!-- Status -->
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Admin Dashboard</p>
+    </footer>
+</body>
+</html>
