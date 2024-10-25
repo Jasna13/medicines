@@ -1,0 +1,289 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Sleek modern font */
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #1B5E20; /* Dark green for a professional look */
+    color: white;
+    padding: 30px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for a lifted look */
+    top: 0;
+    z-index: 100;
+    display:flex;
+}
+
+/* Container for aligning content within the header */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Padding for horizontal alignment */
+}
+
+/* Brand Name Styling */
+.brand-name {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px; /* Adds a bit of space between letters */
+    text-transform: uppercase; /* Optional: for capitalized effect */
+}
+
+/* Navigation Menu */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px; /* Adjust spacing between menu items */
+    margin: 0;
+}
+
+/* List Items */
+nav ul li {
+    margin: 0;
+}
+
+/* Menu Links */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Slightly larger text */
+    padding: 10px 15px; /* Better padding for clickable area */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s, color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    color: #C8E6C9; /* Lighter color on hover */
+    text-decoration: underline;
+}
+
+/* Active Menu Item (Optional) */
+nav ul li a.active {
+    background-color: #4CAF50; /* Different background color for active item */
+    color: #FFFFFF;
+}
+
+
+/* Hero Section with Background Image */
+.hero-section {
+    background: url('pharmacy-store-architecture-consumerism_53876-287225.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 450px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4); /* To add a slight dark overlay on the image for better text visibility */
+}
+
+/* Hero Content Styling */
+.hero-content h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2; /* Slightly reduces space between lines in heading */
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px; /* Adjusts spacing between paragraph and button */
+}
+
+/* Button Styling */
+.hero-content .btn {
+    background-color: #43A047;
+    color: white;
+    padding: 14px 40px; /* Enlarges the button slightly */
+    font-size: 18px;
+    margin-top: 0; /* Reduces extra margin */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adds a slight hover effect */
+}
+
+/* Button Hover Effect */
+.hero-content .btn:hover {
+    background-color: #2E7D32;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+
+/* Search Section */
+.search-section-top {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    top: 70px; /* Fixed to top just after header */
+    z-index: 99;
+}
+
+.search-section-top form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.search-section-top input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.search-section-top button {
+    padding: 10px 20px;
+    background-color: #1B5E20;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-section-top button:hover {
+    background-color: #388E3C;
+}
+
+/* Discount Products Section */
+.discount-products-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.discount-products-section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #1B5E20;
+    margin-bottom: 40px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.product-card .original-price {
+    text-decoration: line-through;
+    color: #C62828;
+}
+
+.product-card .btn {
+    display: inline-block;
+    background-color: #43A047;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .btn:hover {
+    background-color: #2E7D32;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1B5E20;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-top: 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+}

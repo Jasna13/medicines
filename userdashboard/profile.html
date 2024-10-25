@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    padding: 20px;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Page Heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+/* User Details Section */
+.user-details {
+    margin-bottom: 40px;
+}
+
+.user-details h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.info {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.info label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+/* Order Details Section */
+.order-details h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* Order Table */
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.order-table th, .order-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+.order-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.order-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Status Labels */
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.delivered {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pending {
+    background-color: #FFA500;
+    color: white;
+}
+
+.cancelled {
+    background-color: #FF0000;
+    color: white;
+}
+
+    </style>
+
+    <div class="profile-container">
+        <h1>User Profile</h1>
+
+        <!-- User Details Section -->
+        <div class="user-details">
+            <h2>Personal Information</h2>
+            <div class="info">
+                <label>Username:</label>
+                <span>JohnDoe</span>
+            </div>
+            <div class="info">
+                <label>Email:</label>
+                <span>john@example.com</span>
+            </div>
+            <div class="info">
+                <label>Phone:</label>
+                <span>+1 123 456 7890</span>
+            </div>
+        </div>
+
+        <!-- Order Details Section -->
+        <div class="order-details">
+            <h2>Order Details</h2>
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>Medicine A</td>
+                        <td>2</td>
+                        <td>$50</td>
+                        <td><span class="status delivered">Delivered</span></td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>Medical Equipment B</td>
+                        <td>1</td>
+                        <td>$150</td>
+                        <td><span class="status pending">Pending</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
